@@ -27,3 +27,8 @@ server.listen(800,() => {
 });
 
 const MONGO_URL = 'mongodb+srv://1001thieves:1001thieves@cluster0.xjzbybf.mongodb.net/?retryWrites=true&w=majority'
+
+mongoose.Promise = Promise;
+mongoose.connect  (MONGO_URL)
+
+mongoose.connection.on('error',(error:Error) => console.log(error));
