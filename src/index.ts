@@ -24,3 +24,5 @@ const server = http.createServer(app);
 server.listen(800,() => {
     console.log('server listening on http://localhost:800/');
 });
+
+const MONGO_URL = 'mongodb+srv://designerafrica10:@cluster0.n9amurh.mongodb.net/?retryWrites=true&w=majority'
