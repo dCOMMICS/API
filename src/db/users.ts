@@ -8,5 +8,7 @@ const UserSchema = new mongoose.Schema({
         password: { type: 'string, required: true   select: false},
         salt: { type: 'string, selected: false},
         sessionToken: { type: 'string, select: false}, 
-    }
+    },
 });
+
+export const UserModel = mongoose.model('User', UserSchema)
