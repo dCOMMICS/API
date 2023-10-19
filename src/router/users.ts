@@ -9,3 +9,5 @@ export default (router: express.Router) => {
   router.patch('/users/:id', isAuthenticated, isOwner, updateUser);
 };
 // project DONE//
+
+// FULLY WORKING //
